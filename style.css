@@ -457,3 +457,6 @@ main h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     line-height: 1.6;
 }
+html {
+    scroll-behavior: smooth;
+}
