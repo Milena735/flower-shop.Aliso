@@ -393,3 +393,46 @@ main h1 {
 .custom-notification .notification-close:hover {
     background: rgba(255, 255, 255, 0.4);
 }
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #5e3a7c;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: 0.2s;
+    padding: 8px 0;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #9b59b6;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #9b59b6;
+    transition: 0.2s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
