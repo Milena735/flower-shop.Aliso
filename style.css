@@ -6,14 +6,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('https://images.pexels.com/photos/1303084/pexels-photo-1303084.jpeg?w=1600');
-    background-size: cover;
+    background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
     background-attachment: fixed;
-    background-position: center;
     color: #2d2d2d;
     padding-bottom: 40px;
 }
-
 /* ШАПКА */
 header {
     background-color: rgba(255, 255, 255, 0.96);
