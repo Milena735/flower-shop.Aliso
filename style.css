@@ -460,3 +460,54 @@ main h1 {
 html {
     scroll-behavior: smooth;
 }
+/* ===== МЕНЮ НАВИГАЦИИ ===== */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #5e3a7c;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #9b59b6;
+}
+
+/* ===== СТРАНИЦЫ "О НАС" И "КОНТАКТЫ" ===== */
+.info-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.info-page h1 {
+    font-size: 2rem;
+    color: #5e3a7c;
+    margin-bottom: 30px;
+    border-left: 5px solid #9b59b6;
+    padding-left: 20px;
+}
+
+.info-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 28px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ===== */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
