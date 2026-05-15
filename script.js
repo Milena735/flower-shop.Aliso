@@ -504,6 +504,20 @@ function prevStep(step) {
 }
 
 function finishBuilder() {
+function finishBuilder() {
+    // Вычисляем общую стоимость
+    const price = selectedFlowers.reduce((s, f) => s + (f.price || 0) * (f.quantity || 1), 0) +
+                  selectedGreenery.reduce((s, g) => s + (g.price || 0), 0) +
+                  selectedPackaging.reduce((s, p) => s + (p.price || 0), 0);
+    
+    if (price <= 0) {
+        showNotification("❌ Нельзя собрать пустой букет! Добавьте цветы, зелень или упаковку.", 2500);
+        return;
+    }
+    
+    updateMultiBuilderTotal();
+    // ... остальной код функции
+}
     // Проверка на пустой букет
     if (selectedFlowers.length === 0 && selectedGreenery.length === 0 && selectedPackaging.length === 0) {
         showNotification("❌ Нельзя собрать пустой букет! Добавьте что-нибудь.", 2000);
