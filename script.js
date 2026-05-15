@@ -450,10 +450,18 @@ function addMultiBuilderToCart() {
     const greeneryText = selectedGreenery.map(g => g.name).join(', ');
     const packagingText = selectedPackaging.map(p => p.name).join(', ');
     
-    const name = `💐 Букет (🌹 ${flowersText}; 🌿 ${greeneryText}; 🎀 ${packagingText})`;
+    // Вычисляем общую стоимость
     const price = selectedFlowers.reduce((s, f) => s + (f.price || 0) * (f.quantity || 1), 0) +
                   selectedGreenery.reduce((s, g) => s + (g.price || 0), 0) +
                   selectedPackaging.reduce((s, p) => s + (p.price || 0), 0);
+    
+    // Если цена 0 — запрещаем добавление
+    if (price <= 0) {
+        showNotification("❌ Нельзя добавить пустой букет! Выберите цветы, зелень или упаковку.", 2500);
+        return;
+    }
+    
+    const name = `💐 Букет (🌹 ${flowersText}; 🌿 ${greeneryText}; 🎀 ${packagingText})`;
     
     let item = cart.find(i => i.name === name);
     if (item) item.quantity++;
