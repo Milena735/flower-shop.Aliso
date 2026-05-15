@@ -85,5 +85,27 @@
         </div>
     </div>
 </footer>
+    <!-- Боковая панель корзины -->
+<aside id="cartSidebar" class="cart-sidebar">
+    <h3>🛍️ Корзина</h3>
+    <div id="cartItems"></div>
+    <div class="cart-total">Итого: <span id="cartTotal">0</span> ₽</div>
+    <button id="checkoutBtn">Оформить заказ</button>
+    <button id="closeCartBtn">Закрыть</button>
+</aside>
+
+<!-- Модальное окно оформления заказа -->
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Оформление заказа</h3>
+        <form id="orderForm">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="tel" id="phone" placeholder="Телефон" required>
+            <input type="text" id="address" placeholder="Адрес доставки" required>
+            <button type="submit">Отправить заказ</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
