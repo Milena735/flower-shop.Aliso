@@ -510,7 +510,10 @@ function finishBuilder() {
         🌿 Зелень: ${greeneryText || 'не выбрана'}<br>
         🎀 Упаковка: ${packagingText || 'не выбрана'}
     `;
-    
+    if (selectedFlowers.length === 0 && selectedGreenery.length === 0 && selectedPackaging.length === 0) {
+    showNotification("❌ Нельзя собрать пустой букет! Добавьте что-нибудь.", 2000);
+    return;
+}
     panel.style.display = 'block';
     currentStep = 4;
     
