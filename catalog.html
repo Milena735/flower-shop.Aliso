@@ -19,8 +19,88 @@
     </header>
 
     <main>
-        <h1>Каталог букетов</h1>
+        <h1>📋 Готовые букеты</h1>
         <div class="catalog" id="catalog"></div>
+
+        <div class="builder-divider">
+            <span>✿ ✿ ✿</span>
+        </div>
+
+        <h1>💐 Собери свой букет</h1>
+        <p class="builder-subtitle">Соберите букет сами — выберите цветы, зелень и упаковку</p>
+
+        <!-- Конструктор с шагами -->
+<!-- Плавающая панель с ценой -->
+<div class="floating-price-panel" id="floatingPricePanel">
+    <div class="floating-price-inner">
+        <span class="floating-price-label">💰 Стоимость букета:</span>
+        <span class="floating-price-value" id="floatingPriceValue">0 ₽</span>
+    </div>
+    <div class="floating-price-details" id="floatingPriceDetails">
+        Выберите цветы, зелень и упаковку
+    </div>
+</div>
+        <div class="step-builder">
+            <!-- Шаг 1: Цветы -->
+            <div class="step active" id="step1">
+                <div class="step-header">
+                    <span class="step-number">1</span>
+                    <h3>Выберите цветы</h3>
+                    <span class="step-status">✔️</span>
+                </div>
+                <div class="step-content">
+                    <div class="builder-items" id="flowersList"></div>
+                    <button class="step-next" onclick="nextStep(2)">Далее →</button>
+                </div>
+            </div>
+
+            <!-- Шаг 2: Зелень -->
+            <div class="step" id="step2">
+                <div class="step-header">
+                    <span class="step-number">2</span>
+                    <h3>Выберите зелень</h3>
+                    <span class="step-status"></span>
+                </div>
+                <div class="step-content" style="display: none;">
+                    <div class="builder-items" id="greeneryList"></div>
+                    <div class="step-buttons">
+                        <button class="step-prev" onclick="prevStep(1)">← Назад</button>
+                        <button class="step-next" onclick="nextStep(3)">Далее →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Шаг 3: Упаковка -->
+            <div class="step" id="step3">
+                <div class="step-header">
+                    <span class="step-number">3</span>
+                    <h3>Выберите упаковку</h3>
+                    <span class="step-status"></span>
+                </div>
+                <div class="step-content" style="display: none;">
+                    <div class="builder-items" id="packagingList"></div>
+                    <div class="step-buttons">
+                        <button class="step-prev" onclick="prevStep(2)">← Назад</button>
+                        <button class="step-next" onclick="finishBuilder()">Далее →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ИТОГОВАЯ ПАНЕЛЬ -->
+            <div class="builder-total-panel" id="builderTotalPanel" style="display: none;">
+                <div class="builder-total-info">
+                    <div class="builder-total-price">
+                        <span>💰 Стоимость букета:</span>
+                        <span id="builderTotalPrice">0 ₽</span>
+                    </div>
+                    <div class="builder-selected-list" id="builderSelectedList"></div>
+                    <button class="builder-add-to-cart" onclick="addMultiBuilderToCart()">
+                        🛒 Добавить собранный букет в корзину
+                    </button>
+                    <button class="builder-reset" onclick="resetBuilder()">🔄 Собрать заново</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <aside id="cartSidebar" class="cart-sidebar">
@@ -45,5 +125,18 @@
     </div>
 
     <script src="script.js"></script>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-copyright">
+            © 2026 Цветочный магазин "Aliso"
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html">О нас</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
