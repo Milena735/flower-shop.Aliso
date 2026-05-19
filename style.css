@@ -1411,3 +1411,18 @@ main,
 .hero-image:hover {
     transform: scale(1.02);
 }
+/* Исправление для главной страницы — возвращаем нормальные отступы */
+body.home-page main {
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    box-sizing: border-box;
+}
+
+/* Убедимся, что каталог на главной не съезжает */
+#featuredCatalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+    width: 100%;
+}
