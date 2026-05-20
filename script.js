@@ -259,15 +259,15 @@ const flowersMulti = [
 
 const greeneryMulti = [
     { id: 'g1', name: 'Эвкалипт', price: 110, image: 'https://ir.ozone.ru/s3/multimedia-1-3/7457121867.jpg' },
-    { id: 'g2', name: 'Папоротник', price: 100, image: 'https://kalinakras.ru/upload/iblock/70d/8ddkwteh9axoaq7fnz9as9shws9wx3rw.jpg' },
-    { id: 'g3', name: 'Аспидистра', price: 210, image: 'https://funburg.ru/upload/iblock/867/aspidistra.jpg' },
+    { id: 'g2', name: 'Папоротник', price: 100, image: https:'https://basket-18.wbbasket.ru/vol2995/part299569/299569358/images/big/1.webp' },
+    { id: 'g3', name: 'Аспидистра', price: 210, image: 'https://avatars.mds.yandex.net/i?id=b0dde2c09d993f0263ebaac4bd599842_sr-9043236-images-thumbs&n=13' },
     { id: 'g4', name: 'Рускус', price: 170, image: 'https://content2.flowwow-images.com/data/flowers/524x524/56/1716625508_30298556.jpg' }
 ];
 
 const packagingMulti = [
     { id: 'p1', name: 'Крафт + лента', price: 50, image: 'https://avatars.mds.yandex.net/i?id=15426fa820bcf2c26d3f37a7d145bcae_l-5280919-images-thumbs&n=13' },
-    { id: 'p2', name: 'Прозрачная плёнка', price: 60, image: 'https://megacvet24.ru/image/catalog/Blog/kak-zavernut-buket-2.jpg' },
-    { id: 'p3', name: 'Сетка декоративная', price: 100, image: 'https://idealfloristika.ru/wa-data/public/shop/products/66/59/135966/images/247672/247672.970.jpeg' },
+    { id: 'p2', name: 'Прозрачная плёнка', price: 60, image: 'https://avatars.mds.yandex.net/i?id=5bae7c3eb87589c0297dcdb745923dfca92d1eb0-5234681-images-thumbs&n=13' },
+    { id: 'p3', name: 'Сетка декоративная', price: 100, image: 'https://avatars.mds.yandex.net/i?id=20fc024a4c425fdb670c17dc410c149fbea13118-5459902-images-thumbs&n=13' },
     { id: 'p4', name: 'Подарочная коробка', price: 350, image: 'https://avatars.mds.yandex.net/get-mpic/4615030/img_id7991358104299464563.jpeg/orig' }
 ];
 
