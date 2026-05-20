@@ -266,8 +266,8 @@ const greeneryMulti = [
 
 const packagingMulti = [
     { id: 'p1', name: 'Крафт + лента', price: 50, image: 'https://avatars.mds.yandex.net/i?id=15426fa820bcf2c26d3f37a7d145bcae_l-5280919-images-thumbs&n=13' },
-    { id: 'p2', name: 'Прозрачная плёнка', price: 60, image: 'https://avatars.mds.yandex.net/i?id=5bae7c3eb87589c0297dcdb745923dfca92d1eb0-5234681-images-thumbs&n=13' },
-    { id: 'p3', name: 'Сетка декоративная', price: 100, image: 'https://avatars.mds.yandex.net/i?id=20fc024a4c425fdb670c17dc410c149fbea13118-5459902-images-thumbs&n=13' },
+    { id: 'p2', name: 'Прозрачная плёнка', price: 60, image: 'https://avatars.mds.yandex.net/i?id=a5793d451a2e912e04db58253fb5c75225c2ce7e-8977890-images-thumbs&ref=rim&n=33&w=200&h=200' },
+    { id: 'p3', name: 'Сетка декоративная', price: 100, image: https:'https://img.joomcdn.net/2107100b61370032b236875a57b10648e5b7810f_original.jpeg' },
     { id: 'p4', name: 'Подарочная коробка', price: 350, image: 'https://avatars.mds.yandex.net/get-mpic/4615030/img_id7991358104299464563.jpeg/orig' }
 ];
 
